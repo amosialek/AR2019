@@ -38,7 +38,7 @@ for iters2 in {1..iters} do{
     forall(i,j) in D do
 	{
 	Temp[i,j] = (A[i-1,j] + A[i+1,j] +A[i,j-1]+ A[i,j+1] - h*h*p/T) / 4;
-	Temp2[i,j] = here.id;
+//	Temp2[i,j] = here.id;
 	}
 
 A[D] = Temp[D];
