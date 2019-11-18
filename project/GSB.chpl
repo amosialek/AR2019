@@ -27,20 +27,20 @@ for x in 1..iters do {
     forall(i,j) in black_odd do{
 		A[i,j] = (A[i-1,j] + A[i+1,j] +A[i,j-1]+ A[i,j+1] - h*h*p/T) / 4;
     
-	Temp[i,j] = here.id;
+//	Temp[i,j] = here.id;
 }
     forall(i,j) in black_even do{
 		A[i,j] = (A[i-1,j] + A[i+1,j] +A[i,j-1]+ A[i,j+1] - h*h*p/T) / 4;
 
-	Temp[i,j] = here.id;
+//	Temp[i,j] = here.id;
 }
     forall(i,j) in red_odd do{
 		A[i,j] = (A[i-1,j] + A[i+1,j] +A[i,j-1]+ A[i,j+1] - h*h*p/T) / 4;
-	Temp[i,j] = here.id;
+//	Temp[i,j] = here.id;
 }
     forall(i,j) in red_even do{
 		A[i,j] = (A[i-1,j] + A[i+1,j] +A[i,j-1]+ A[i,j+1] - h*h*p/T) / 4;
-	Temp[i,j] = here.id;
+//	Temp[i,j] = here.id;
 }
 }
 timer.stop() ;
